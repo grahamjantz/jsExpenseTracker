@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "./styles.css">
+    <script type = "text/javascript" src = "./main.js" defer></script>
+	<title>JS Expense Tracker</title>
+</head>
+<body>
+    <main>
+        <div class = "container">
+            <div class = "grid">
+                <h1 id = "heading">JS Expense Tracker</h1>
+                <label>Item<input id = "itemInput" class = "input-field" type = "text"/></label>
+                <label>Amount<input id = "amountInput" class = "input-field" type = "number"/></label>
+                <label>Date<input id = "dateInput" class = "input-field" type = "date"/></label>
+                <label id = "noteInput">Note<textarea id = "noteIn" class = "input-field" type = "text"></textarea></label>
+                <div class = "submitDiv">
+                    <button id = submitButton>Submit</button>
+                </div>
+            </div>
+            <table>
+                <tbody id = "addedExpenses">
+                    <tr id = tableHeading>
+                        <td>Date</td>
+                        <td>Name</td>
+                        <td>Note</td>
+                        <td>Amount</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

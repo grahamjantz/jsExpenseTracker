@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    /*border: 1px solid gray;*/
+}
+
+.grid {
+    margin: 0 auto;
+    width: 80%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 80px);
+    grid-template-areas: 
+                    "title title title"
+                    "item amount date"
+                    "note note note"
+                    "submit submit submit"
+                    "expenses expenses expenses";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.input-field {
+    height: 50px;
+    width: 100%;
+    justify-self: center;
+    font-size: 1.2em;
+}
+
+label {
+    text-align: left;
+    text-indent: 10px;
+}
+
+#heading {
+    grid-area: title;
+}
+#itemInput {
+    grid-area: item;
+}
+#amountInput {
+    grid-area: amount;
+}
+#dateInput {
+    grid-area: date;
+}
+#noteInput {
+    grid-area: note;
+    height: 5em;
+}
+.submitDiv {
+    grid-area: submit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#submitButton {
+    width: 20%;
+}
+#submitButton:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+table {
+    margin: 0 auto;
+    height: 45%;
+    width: 80%;
+    margin-top: 30px;
+}
+#tableHeading {
+    height: 10px;
+}
